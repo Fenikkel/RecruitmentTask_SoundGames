@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class PoolableObjectExample : PoolableObjectBase
+public class PoolableObjectExample : PoolableObject
 {
     Coroutine _DeactivateCoroutine;
 

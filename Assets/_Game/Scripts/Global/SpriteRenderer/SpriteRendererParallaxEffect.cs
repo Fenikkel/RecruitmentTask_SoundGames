@@ -56,7 +56,7 @@ public class SpriteRendererParallaxEffect : MonoBehaviour
         CheckConfig();
     }
 
-    private void LateUpdate()
+    private void LateUpdate() // FixedUpdate()
     {
         _DeltaMovement = _CameraTransform.position - _LastCameraPosition;
         transform.position += new Vector3(_DeltaMovement.x * _HorizontalParallaxEffectMultiplier, _DeltaMovement.y * _VerticalParallaxEffectMultiplier);

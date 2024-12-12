@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-public class PoolableObjectBase : MonoBehaviour, IPoolableObject
+public class PoolableObject : MonoBehaviour, IPoolableObject
 {
     IObjectPool<IPoolableObject> _ObjectPool; // Reference to his object pool
 

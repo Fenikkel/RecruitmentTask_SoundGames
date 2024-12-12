@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-public class ObjectPoolController : MonoBehaviour
+public class ObjectPool : MonoBehaviour
 {
     [SerializeField] GameObject _ObjectPrefab;
 
@@ -17,7 +17,7 @@ public class ObjectPoolController : MonoBehaviour
         _ObjectPool = new ObjectPool<IPoolableObject>(CreateObject, OnGetFromPool, OnReleaseToPool, OnDestroyPooledObject, _ColectionCheck, _StartSize, _MaxSize);
     }
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR && false
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) 
