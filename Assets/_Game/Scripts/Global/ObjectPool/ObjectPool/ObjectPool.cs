@@ -38,7 +38,7 @@ public class ObjectPool : MonoBehaviour
         _ObjectPool.Release(pooledObject);
     }
 
-    #region ObjectPool functions
+    #region ObjectPool callbacks
     private IPoolableObject CreateObject() 
     {
         GameObject goInstance = Instantiate(_ObjectPrefab.gameObject);
